@@ -1,0 +1,86 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: #f7fff7;
+}
+.love {
+    position: absolute;
+    z-index: 5;
+    top: 45vh;
+    font-size: 2.2em;
+}
+ p{
+    font-family: 'Libre Baskerville', serif;
+    color: red;
+}
+.hurt{
+    
+    background-color: #B2FFB2;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    /* transform: rotate(-45deg); */
+    z-index: 1;
+    
+}
+.hurt::after{
+    content: '';
+    background-color: #B2FFB2;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -55px;
+    left: -0px;
+    border-radius: 50%;
+}
+.hurt::before{
+    content: '';
+    background-color: #B2FFB2;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 55px;
+    border-radius: 50%;
+}
+
+.inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00FF00;
+    width:150px;
+    height: 150px;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: 0px 15px 30px 5px rgba(0, 82, 0, 0.7);
+}
+.inside::after{
+    content: '';
+    background-color: #00FF00;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -65px;
+    left: 0px;
+    border-radius: 50%;
+}
+.inside::before{
+    content: '';
+    background-color:#00FF00;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 65px;
+    border-radius: 50%;
+}
